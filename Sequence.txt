@@ -1,0 +1,9 @@
+Sequence of value simulation
+DPIT = Differential Pressure Indicator Transmitter
+Stage 3 (Ultrafiltration)
+
+1) 15:44pm -> Changed DPIT301 to 35kPa
+2) 15:54pm -> Changed DPIT301 to 20kPa
+3) 16:05pm -> Changed DPIT301 to 35kPa
+4) 16:17pm -> Changed DPIT301 to 20kPa
+4) 16:34pm -> Changed DPIT301 to 40kPa
