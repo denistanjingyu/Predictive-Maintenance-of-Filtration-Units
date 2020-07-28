@@ -21,4 +21,5 @@ I would like to acknowledge the funding support from Nanyang Technological Unive
 
 ### Code and Resources Used
 **Python:** Version 3.6
+
 **Packages:** pandas, numpy, matplotlib, seaborn, sklearn, xgboost
