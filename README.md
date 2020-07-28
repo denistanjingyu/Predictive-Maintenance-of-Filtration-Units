@@ -1,6 +1,6 @@
-# Predictive Maintenance of Filtration Units
+### Predictive Maintenance of Filtration Units
 
-Project under Nanyang Technological University URECA undergraduate research programme
+* Project under Nanyang Technological University URECA undergraduate research programme
 
 Scope of project
 
