@@ -20,4 +20,5 @@ In this study, three machine learning models were trained to demonstrate the eco
 I would like to acknowledge the funding support from Nanyang Technological University – URECA Undergraduate Research Programme for this research project.
 
 ### Code and Resources Used
+**Python:** Version 3.6
 **Packages:** pandas, numpy, matplotlib, seaborn, sklearn, xgboost
