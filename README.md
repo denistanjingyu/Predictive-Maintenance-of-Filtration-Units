@@ -1,8 +1,8 @@
-### Predictive Maintenance of Filtration Units
+# Predictive Maintenance of Filtration Units
 
-** Project under Nanyang Technological University URECA undergraduate research programme
+## Project under Nanyang Technological University URECA undergraduate research programme
 
-Scope of project
+### Scope of project
 
 • Investigated the possibility of predictive maintenance of an ultra-filtration unit by adopting machine learning and data analytics to predict the differential pressure
 
@@ -11,7 +11,7 @@ Scope of project
 • Utilized Monte Carlo simulation to model risk and uncertainty
 
 
-Abstract of research paper
+### Abstract of research paper
 
 This paper provides an economic perspective on the predictive maintenance of filtration units. The rise of predictive maintenance is possible due to the growing trend of industry 4.0 and the availability of inexpensive sensors. However, the adoption rate for predictive maintenance by companies remains low. The majority of companies are sticking to corrective and preventive maintenance. This is not due to a lack of information on the technical implementation of predictive maintenance, with an abundance of research papers on state-of-the-art machine learning algorithms that can be used effectively. The main issue is that most upper management has not yet been fully convinced of the idea of predictive maintenance. The economic value of the implementation has to be linked to the predictive maintenance program for better justification by the management. 
 
