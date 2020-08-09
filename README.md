@@ -36,4 +36,4 @@ Supervisor: Assoc Prof Law Wing-Keung, Adrian
 
 **Datasets:** Requested available data at https://itrust.sutd.edu.sg/itrust-labs_datasets/, collected own data based on required scenarios
 
-**Research  Paper Preprint:"" https://www.researchgate.net/publication/343537623_An_Economic_Perspective_on_Predictive_Maintenance_of_Filtration_Units
+**Research  Paper Preprint:** https://www.researchgate.net/publication/343537623_An_Economic_Perspective_on_Predictive_Maintenance_of_Filtration_Units
