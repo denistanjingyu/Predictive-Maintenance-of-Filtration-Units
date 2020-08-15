@@ -12,8 +12,6 @@ P207_t_1 = 0;
 %T202_t_1 = ;
 %T203_t_1 = ;
 
-%%----update current state------
-
 %%---judge situation this PLC-------
 if MV201_t_1 == 1
     P201_t_1 = 1;
