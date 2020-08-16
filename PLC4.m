@@ -12,13 +12,14 @@ P4O1_t_1 = PLC4(4);
 %P4_state = PLC4(9);
 ROfeed_t_1 = PLC3(5);
 ROfeed_limit = 30
+
 %%----update current state------
 LIT401_t = LIT401_t_1 + (FIT301_t_1 - FIT401_t_1) * 5 / AreaTank4 + PLC3 one parameters
-%%---judge situation this PLC-------
 
+%%---judge situation this PLC-------
 if ((MV503_t_1 = 2.0) &&  (MV504_t_1 = 2.0) && (P401_t_1 = 1.0)) 
    ROfeed_t= ROfeed_t_1 +1
-end if
+End if
 
 If((ROfeed_t_1 > 0) && (ROfeed_t < ROfeed_limit))
 P4O1_t = 2
@@ -28,5 +29,4 @@ else
 P4O1_t = 2
 FIT401_t = FIT401_t_1 + parafit * ROfeed_t
 UV401_t = 2 
-
 End if
