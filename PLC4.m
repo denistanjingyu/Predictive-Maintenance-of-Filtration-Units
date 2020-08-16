@@ -5,11 +5,11 @@ FIT401_t_1 = PLC4(1);
 LIT401_t_1 = PLC4(2);
 UV401_t_1 = PLC4(3);
 P4O1_t_1 = PLC4(4);
-%P4O2_t_1 = PLC4(5); 
-%P4O3_t_1 = PLC4(6); 
-%P4O4_t_1 = PLC4(7); 
-%LS401_t_1 = PLC4(8); 
-%P4_state = PLC4(9);
+P4O2_t_1 = PLC4(5); 
+P4O3_t_1 = PLC4(6); 
+P4O4_t_1 = PLC4(7); 
+LS401_t_1 = PLC4(8); 
+P4_state = PLC4(9);
 ROfeed_t_1 = PLC3(5);
 ROfeed_limit = 30
 
