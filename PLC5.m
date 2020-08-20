@@ -2,7 +2,7 @@ load('PLC5.mat')
 
 P5_state = PLC5(1)
 
-vsd_min_speed = 10 %these values are preset in the PLC code itself
+vsd_min_speed = 10 % these values are preset in the PLC code itself
 HMI_HPP_Q_SET_M3H = 0.6
 
 %%----update current state------
@@ -50,7 +50,7 @@ if p5_state = 6:  % maintain at least 10% of FIT501 flow. ramps 4.5 per second o
 end if
 
 if p5_state = 7 : % checks if conductivity > conductivity setpoint
-  if AIT504 < AIT504_SAH :  %which one is the conductivity setpoint, AIT504 or AIT504.SAH
+  if AIT504 < AIT504_SAH :  % which one is the conductivity setpoint, AIT504 or AIT504.SAH
     p5_state = 8
   end if
 end if
@@ -116,14 +116,14 @@ if p5_state = 16 :  % opens MV502  (automatic when it reaches timeout of 120 sec
   end if
 end if
 
-if p5_state = 17 :  % opens MV503  (automatic when it reaches timeout of 120 seconds)
+if p5_state = 17 :  % opens MV503 (automatic when it reaches timeout of 120 seconds)
   MV503_timeout = MV503_timeout + 1
   if MV503 = 2 | MV503_timeout >120 :
     p5_state = 18
   end if
 end if
 
-if p5_state = 18 :  % opens MV501  (automatic when it reaches timeout of 120 seconds)
+if p5_state = 18 :  % opens MV501 (automatic when it reaches timeout of 120 seconds)
   MV501_timeout = MV501_timeout + 1
   if MV501 = 2 | MV501_timeout > 120 :
     p5_state = 19
