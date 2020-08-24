@@ -9,7 +9,7 @@ P601 * RO PERMEATE & PLC1
 P602 * UF BACKWASH & PLC3
 P603 * CIP & PLC5
 If (LSH601_t_1 = active) && (LIT101 < H)
-P6O1_t = 2
+    P6O1_t = 2
 If (LIT101 >= H) || (LSL601_t_1 = active) 
     P6O1_t = 1
 %%------------------------------------
