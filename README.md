@@ -4,6 +4,13 @@
 
 ![About URECA](https://user-images.githubusercontent.com/45563371/89106943-e8be7900-d45f-11ea-864f-9a12dede8505.jpg)
 
+Table of Contents
+=================
+- [Scope of project](#scope-of-project)
+- [Abstract of research paper](#abstract-of-research-paper)
+- [Research poster](#research-poster)
+- [Code and Resources Used](#code-and-resources-used)
+
 ### Scope of project
 
 • Investigated the possibility of predictive maintenance of an ultra-filtration unit by adopting machine learning and data analytics to predict the differential pressure
