@@ -4,7 +4,7 @@
 
 ![About URECA](https://user-images.githubusercontent.com/45563371/89106943-e8be7900-d45f-11ea-864f-9a12dede8505.jpg)
 
-Table of Contents
+Table of Contents :bookmark_tabs:
 =================
 - [Scope of project](#scope-of-project)
 - [Abstract of research paper](#abstract-of-research-paper)
