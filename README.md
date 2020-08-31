@@ -25,6 +25,11 @@ I would like to acknowledge the funding support from Nanyang Technological Unive
 
 Supervisor: Assoc Prof Law Wing-Keung, Adrian
 
+### Research poster
+
+![image](https://user-images.githubusercontent.com/45563371/91751535-8213b300-ebf7-11ea-9cf3-918b18488399.png)
+
+
 ### Code and Resources Used
 **Python:** Version 3.6
 
