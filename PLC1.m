@@ -13,7 +13,8 @@ else
    MV101_t = 2.0
    FIT101_t = 30
 end if
-  if (LIT101_t > HLimit)
+
+if (LIT101_t > HLimit)
 P101_t = 2.0
 FIT201_t = 30
 else 
