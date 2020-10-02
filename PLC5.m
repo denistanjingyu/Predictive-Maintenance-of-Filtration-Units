@@ -12,15 +12,15 @@ if p5_state = 1:     % Standby state
   P5_state = 3       % go to 3rd state
 end if
 
-if p5_state = 2:  % checks RO feed pump status
-  if RO_feed = 1: % 1 means running, 0 means not running 
+if p5_state = 2:   % checks RO feed pump status
+  if RO_feed = 1:  % 1 means running, 0 means not running 
     p5_state = 3
   end if
 end if
 
 if p5_state = 3:  % opens MV503 & MV504
-  if MV503 = 2 && MV504 = 2 && RO_feed = 1: % for MVxxx, 2 means open, 1 means closed, 0 means it's in the process
-                                              % for RO_feed, 1 means pump is running, 0 means it's  closed
+  if MV503 = 2 && MV504 = 2 && RO_feed = 1:  % for MVxxx, 2 means open, 1 means closed, 0 means it's in the process
+                                             % for RO_feed, 1 means pump is running, 0 means it's  closed
     p5_state = 4
   end if
 end if 
