@@ -33,7 +33,7 @@ if p5_state = 4:  % low pressure flushing
 end if
 
 if p5_state = 5:  % starts high pressure pump (HPP), either P501 or P502
-  if P501_speed > pump_auto_speed | P502_speed > pump_auto_speed : % pump speed has to be more than its automated speet / default speed
+  if P501_speed > pump_auto_speed | P502_speed > pump_auto_speed :  % pump speed has to be more than its automated speet / default speed
     p5_state = 6
   end if
 end if
