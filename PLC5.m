@@ -96,8 +96,8 @@ if p5_state = 13:   % ramp down / decrease VSD ;
   end if
 end if
 
-if p5_state = 14 : % stops high-pressure pump
-  if RO_high = 0  : % 0 means not running, 1 means running
+if p5_state = 14 :  % stops high-pressure pump
+  if RO_high = 0  :  % 0 means not running, 1 means running
     p5_state = 15
   end if
 end if
