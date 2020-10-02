@@ -43,13 +43,13 @@ if p5_state = 6:  % maintain at least 10% of FIT501 flow. ramps 4.5 per second o
     if PIT502 < PIT503 && PIT501<275:
       pump_auto_speed = pump_auto_speed + 0.5
     end if
-    if FIT501 > HMI_HPP_Q_SET_M3H && PIT502<PIT503 && PIT501.>260: % HMI_HPP_Q_SET_M3H is preset to be 0.6 (see above)
+    if FIT501 > HMI_HPP_Q_SET_M3H && PIT502<PIT503 && PIT501.>260:  % HMI_HPP_Q_SET_M3H is preset to be 0.6 (see above)
       p5_state = 7
     end if
   end if
 end if
 
-if p5_state = 7: % checks if conductivity > conductivity setpoint
+if p5_state = 7:  % checks if conductivity > conductivity setpoint
   if AIT504 < AIT504_SAH:  % which one is the conductivity setpoint, AIT504 or AIT504.SAH
     p5_state = 8
   end if
@@ -57,25 +57,25 @@ end if
 
 % for MVxxx, 1 means closed, 2 means open, 0 means in-between
 
-if p5_state = 8: % opens MV501
+if p5_state = 8:  % opens MV501
   if MV501 = 2:
     p5_state = 9
   end if
 end if
 
-if p5_state = 9: % closes MV503
+if p5_state = 9:  % closes MV503
   if MV503 = 1
     p5_state = 10
   end if
 end if
 
-if p5_state = 10: % opens MV502
+if p5_state = 10:  % opens MV502
   if MV502 = 2
     p5_state = 11
   end if
 end if
 
-if p5_state = 11: % closes MV504
+if p5_state = 11:  % closes MV504
   if MV504 = 1
     p5_state = 12
   end if
@@ -88,7 +88,7 @@ if p5_state = 12:  % RO permeate production
 end if
   
 if p5_state = 13:   % ramp down / decrease VSD ; 
-  if P501_speed > vsd_min_speed : % vsd_mean_speed = 10, preset
+  if P501_speed > vsd_min_speed :  % vsd_mean_speed = 10, preset
     pump_auto_speed = pump_auto_speed + 0.5
   end if
   if P501_speed < vsd_min_speed:
