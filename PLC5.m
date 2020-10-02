@@ -7,7 +7,7 @@ HMI_HPP_Q_SET_M3H = 0.6
 
 %%----update current state------
 if p5_state = 1:     % Standby state
-  p5_permissive = 1 % to let the plant start
+  p5_permissive = 1  % to let the plant start
   plant = 1         % plant starts           
   P5_state = 3      % go to 3rd state
 end if
