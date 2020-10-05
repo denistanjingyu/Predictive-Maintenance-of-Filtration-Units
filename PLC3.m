@@ -36,7 +36,6 @@ end if
     drain_t = drain_t_1 + 1   
  end if 
      
-     
  %%%---filtration---------------------   
      
   if ((refill_t < refill_limit) && (refill_t_1 > 0.0))
