@@ -23,21 +23,20 @@ drain_limit = 30
 LIT301_t = LIT101_t_1 + (FIT201_t_1 - FIT301_t_1) * 5 / AreaTank1;
 
 %%---judge situation this PLC-------
-if ((MV304_t_1 = 2.0) && (P301_t_1 = 2.0) && (MV302_t_1 = 1.0) ) %% refilling phase
+if ((MV304_t_1 = 2.0) && (P301_t_1 = 2.0) && (MV302_t_1 = 1.0) )  %% refilling phase
     refill_t = refill_t_1 + 1
 end if
- if ((MV304_t_1 = 2.0) && (P301_t_1 = 2.0) && (MV302_t_1 = 2.0) ) %% filtration phase
+ if ((MV304_t_1 = 2.0) && (P301_t_1 = 2.0) && (MV302_t_1 = 2.0) )  %% filtration phase
     filtr_t=filtr_t_1+1   
  end if
- if ((MV301_t_1 = 2.0) && (MV303_t_1 = 2.0) && (P602_t_1 = 2.0) ) %% filtration phase
+ if ((MV301_t_1 = 2.0) && (MV303_t_1 = 2.0) && (P602_t_1 = 2.0) )  %% filtration phase
     backwash_t=backwash_t_1+1   
  end if 
-  if ((MV301_t_1 = 1.0) && (MV303_t_1 = 2.0) && (P602_t_1 = 1.0) ) %% filtration phase
+  if ((MV301_t_1 = 1.0) && (MV303_t_1 = 2.0) && (P602_t_1 = 1.0) )  %% filtration phase
     drain_t = drain_t_1 + 1   
  end if 
      
  %%%---filtration---------------------   
-     
   if ((refill_t < refill_limit) && (refill_t_1 > 0.0))
       MV304_t = 2.0
       P301_t = 2.0
@@ -61,8 +60,8 @@ end if
       else
       end if
       end if
+      
     %%%---filtration---------------------         
-          
           if ((filtr_t < filtr_limit) && (filtr_t_1 > 0.0)
               MV302_t = 2.0
               MV304_t = 1.0
@@ -70,7 +69,7 @@ end if
               P602_t = 1.0
               MV301_t = 1.0
               MV303_t = 1.0
-              DPIT_t = %%relationship defines
+              DPIT_t =  %%relationship defines
              else if ((filtr_t = filtr_limit) && (filtr_t_1 > 0.0)) 
                      filtr_t = 0.0
                      P301_t = 1.0
@@ -79,11 +78,12 @@ end if
                      MV303_t = 2.0
                      MV304_t = 1.0                   
                      P602_t = 1.0
-                     DPIT_t = %%relationship defines
+                     DPIT_t =  %%relationship defines
                      backwash_t = 1.0
                  else 
                  end if
                  end if
+                 
     %%%---backwash---------------------   
              if ((backwash_t < backwash_limit) && (backwash_t_1 > 0.0)
               MV302_t = 1.0
@@ -100,7 +100,7 @@ end if
               P301_t = 1.0
               MV301_t = 1.0
               MV303_t = 2.0
-              DPIT_t = %%relationship defines
+              DPIT_t =  %%relationship defines
               P602_t = 1.0
               drain_t = 1.0
                  else 
@@ -114,7 +114,7 @@ end if
               P301_t = 1.0
               MV301_t = 1.0
               MV303_t = 2.0
-              DPIT_t = %%relationship defines
+              DPIT_t =  %%relationship defines
               P602_t = 1.0
               drain_t = 1.0
              else if ((drain_t = drain_limit) && (drain_t_1 > 0.0)) 
@@ -125,7 +125,7 @@ end if
               P602_t = 1.0
               MV301_t = 1.0
               MV303_t = 1.0
-              DPIT_t = %%relationship defines
+              DPIT_t =  %%relationship defines
               filtr_t = 1.0
                  else 
                  end if
