@@ -44,7 +44,7 @@ end if
       P602_t = 1.0
       MV302_t = 1.0
       FIT301_t = FIT301_t_1
-      DPIT_t=%%relationship defines
+      DPIT_t = %%relationship defines
       MV301_t = 1.0
       MV303_t = 1.0
   else if ((refill_t = refill_limit) && (refill_t_1 > 0.0))
@@ -57,7 +57,7 @@ end if
           MV301_t = 1.0
           MV303_t = 1.0
           filtr_t = 1.0
-          DPIT_t = %%relationship defines
+          DPIT_t =  %%relationship defines
       else
       end if
       end if
@@ -70,7 +70,7 @@ end if
               P602_t = 1.0
               MV301_t = 1.0
               MV303_t = 1.0
-              DPIT_t=%%relationship defines
+              DPIT_t = %%relationship defines
              else if ((filtr_t = filtr_limit) && (filtr_t_1 > 0.0)) 
                      filtr_t = 0.0
                      P301_t = 1.0
