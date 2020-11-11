@@ -34,7 +34,7 @@ Supervisor: Assoc Prof Law Wing-Keung, Adrian
 
 ### Research poster
 
-![image](https://user-images.githubusercontent.com/45563371/91751535-8213b300-ebf7-11ea-9cf3-918b18488399.png)
+![URECA_Poster_Template-1](https://user-images.githubusercontent.com/45563371/98859734-94368b00-249d-11eb-9c5d-3a4918c952bf.png)
 
 
 ### Code and Resources Used
