@@ -1,4 +1,4 @@
-Sequence of value simulation
+---Sequence of value simulation---
 DPIT = Differential Pressure Indicator Transmitter
 Stage 3 (Ultrafiltration)
 
